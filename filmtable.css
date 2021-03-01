@@ -1,0 +1,123 @@
+ul {
+    list-style-type: none;
+}
+html{
+    font-family: Roboto, sans serif;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0f4c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.pricing-img{
+    width: 200px;
+    height: 205px;
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+.pricing-img-1{
+    width: 200px;
+    height: 200px;
+    margin-bottom: none;
+    max-width: 100%;
+}
+.panel{
+    background-color:#f5f3f4;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 50%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricing-plan{
+    border-bottom: 1px solid #e63946;
+}
+.pricing-plan:last-child{
+    border-bottom:none;
+}
+.pricing-header{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.pricing-features{
+    margin: 50px 0 25px;
+    color:white;
+}
+.pricing-feature-item{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 10px 0;
+    line-height: 1.5;
+    /* border-top: 1px solid #0f4c5c ; */
+}
+/* .pricing-feature-item:last-child{
+    border-bottom:1px solid #0f4c5c ;
+} */
+.pricing-price{
+    color:white ;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+.pricing-button{
+    border: 1px solid #e63946;
+    border-radius: 10px;
+    color:#e36414 ;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+    background-color:#fffcf2 ;
+}
+.pricing-button:hover, .pricing-button:focus{
+    background-color:#0f4c5c ;
+    color: #fffcf2;
+    
+}
+.pricing-button.is-featured{
+    background-color: #fffcf2;
+    color: #e36414;
+}
+.pricing-button.is-featured:hover , .pricing-button.is-featured:focus{
+    background-color: #0f4c5c;
+    color: #fffcf2;
+}
+@media(min-width:900px){
+    .panel{
+        flex-direction: row;
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right:#e63946;
+        padding: 60px 5px;
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+    }
+}
+.pricing-plan-1{
+    background-color: #e36414;
+    border-radius: 10px;
+    margin: 10px;
+}
+.pricing-plan-2{
+    background-color: #fb8b24;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+.pricing-plan-3{
+    background-color: #9a031e;
+    border-radius: 10px;
+    margin: 10px;
+}
